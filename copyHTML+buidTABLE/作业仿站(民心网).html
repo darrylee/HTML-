@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>民心网</title>
+    <style>
+        .note{
+            font-size: 13px;
+            color: red;
+            line-height: 25px;
+        }
+        .note span{
+            text-align: center;
+            border-bottom: 1px solid red;
+            font-size: 12px;
+            width: 93%;
+            padding: 5px;
+            cursor: pointer;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+    </style>
+    <style>
+        .sqiu{
+            text-align: center;
+            color: white;
+            background-color: blue;
+            width: 120px;
+            height: 25px;
+            line-height: 25px;
+        }
+        .sqiu h4{
+            font-size: 14px;
+            padding: 0 0 15px 0;
+            clear: both;
+        }
+        .sqiu_xian{
+            border-bottom:1px solid blue;
+            margin-bottom: 10px;
+            width: 93%;
+        }
+        .tijiao{
+            width: 93%;
+            color: white;
+            background: blue;
+        }
+    </style>
+    <style>
+        div span{
+            color:red;
+        }
+    </style>
+    <style>
+        .chengshi{
+            width: 94%;
+            margin-top: 5px;
+            margin-bottom: 8px;
+        }
+    </style>
+    <style>
+        .zhuti{
+            width: 93%;
+            margin: 0 0 10px 0;
+        }
+         #xiangxi{
+            width: 94%;
+            margin: 0 0 10px 0;
+        }
+    </style>
+    <style>
+        .duanxing{
+            border: 1px solid #ccc;
+            background-color: #ccc;
+            border-radius: 4px;
+            /*padding: 2px;*/
+            cursor: pointer;
+        }
+        .dianhua{
+            width: 90px;
+        }
+    </style>
+</head>
+<body>
+<form action="python.py" method="GET" enctype="multipart/form-data">
+<div class="note">
+    "在你诉求前，请你认真阅读:"
+    <span>诉求须知</span> <br>
+    "红色*号为必填项."
+</div>
+<div class="sqiu">
+    <h4>诉求基本信息</h4>
+</div>
+<div class="sqiu_xian"></div>
+<div>
+    <label>诉求分类:</label>
+</div>
+<div>
+          <input id="Sqfl1" name="sqfl" value="1" checked="checked" type="radio">
+          <label for="Sqfl1">投诉</label>
+          <input id="Sqfl2" name="sqfl" value="2"  type="radio">
+          <label for="Sqfl2">咨询</label>
+          <input id="Sqfl3" name="sqfl" value="3"  type="radio">
+          <label for="Sqfl3">建议</label>
+          <input id="Sqfl4" name="sqfl" value="4"  type="radio">
+          <label for="Sqfl4">表扬</label>
+        </div>
+<div>
+    <span>*</span>
+    问题发生所在城市:<br>
+</div>
+<select name="city" -style="width: 250px" -align="cente" id="city" class="chengshi">
+        <option value="1" selected>请选择</option>
+        <option value="2" >北京</option>
+        <option value="3" >上海</option>
+        <option value="4" >河南</option>
+</select>
+<div>
+    <span>*</span>
+    问题发生所在区/县:<br>
+</div>
+<select name="country" -style="width: 250px" -align="cente" id="country" class="chengshi">
+        <option value="1" selected>请选择</option>
+         <option value="2" >东城</option>-->
+        <option value="3" >昌平</option>
+        <option value="4" >海淀</option>
+</select>
+<div>
+    <span>*</span>
+    诉求主题<br>
+</div>
+<input type="text" name="zhuti"  class="zhuti"  > <br>
+<div>
+    <span>*</span>
+    学校名称<br>
+</div>
+<input type="text" name="xuxiao"  class="zhuti"  > <br>
+<div>
+    <span>*</span>
+    年级<br>
+</div>
+<input type="text" name="nianji"  class="zhuti" placeholder="如涉及多个年级，请在投诉内容里进一步表述。" > <br>
+<div>
+    <span>*</span>
+    班级<br>
+</div>
+<input type="text" name="banji"  class="zhuti" placeholder="如涉及多个班级，请在投诉内容里进一步表述。" > <br>
+<div>
+    <span>*</span>
+    教师姓名<br>
+</div>
+<input type="text" name="jiaoshi"  class="zhuti" placeholder="如涉及多个教师，请在投诉内容里进一步表述。" >
+<div>
+    <span>*</span>
+    补课时间<br>
+</div>
+<input type="text" name="xuxiao"  class="zhuti"  > <br>
+<div>
+    <span>*</span>
+    补课地址<br>
+</div>
+<input type="text" name="jiaoshi"  class="zhuti" placeholder="需提供详细地址，校外补课地址精确到门牌号。" >
+<div>
+    <span>*</span>
+    收费金额(元)<br>
+</div>
+<input type="text" name="jiaoshi"  class="zhuti"  >
+<div>
+    <span>*</span>
+    诉求详细内容(2000字以内)<br>
+</div>
+<textarea name="备注" id="xiangxi" cols="30" rows="10" placeholder="请尽量填写详实"></textarea> <br>
+<label>
+    <input type="file" name="shangchuan" value="" onClick="showUpPic()">
+    "上传图片(非必选)"
+</label>
+<!--<div style="display: none">-->
+<!--    <font style="color: red">注：最多上传3张图片，格式要求为JPG、JPEG、PNG</font>-->
+<!--</div>-->
+
+<div class="sqiu">
+    <h4>诉求人信息</h4>
+</div>
+<div class="sqiu_xian"></div>
+<div>
+    <span>*</span>
+    姓名<br>
+</div>
+<input type="text" name="xingming"  class="zhuti"  > <br>
+<div>
+    <span>*</span>
+    职业<br>
+</div>
+<select name="city" -style="width: 250px" -align="cente" id="zye" class="chengshi">
+        <option value="1" selected>请选择</option>
+        <option value="2" >软件工程师</option>
+        <option value="3" >电气工程师</option>
+        <option value="4" >制图工程师</option>
+</select>
+<div>
+    <span>*</span>
+    手机号码<br>
+</div>
+<input type="text" name="jiaoshi"  class="zhuti" placeholder="请输入真实的手机号，否则收不到验证码" >
+
+<div>
+    <span>*</span>
+    短信验证码<br>
+</div>
+<span name="duanxing" class="duanxing">获取短信码</span>
+<input type="text" name="dianhuama" maxlength="6" class="dianhua">
+
+
+<!--提交-->
+<input type="submit" class="tijiao" value="提交保存">
+</form>
+</body>
+</html>
