@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简图</title>
+    <style>
+        .zhuye{
+            background-color: #f1f1f1;
+            text-align: center;
+            font-size: 14px;
+        }
+        .logo{
+            position: absolute;
+            top: 56px;
+            margin-left: 50px;
+        }
+        .main{
+            width: 400px;
+            margin: 60px auto 0;
+            padding: 50px 50px 30px ;
+            background-color: white;
+            display: inline-block;
+        }
+        .title{
+            margin: 0 auto 50px;
+            padding: 10px;
+            font-weight: 400;
+            color: red;
+            background-color: white;
+        }
+        #user{
+            font-size: 20px;
+            width: 350px;
+            height: 60px;
+            border: 1px solid rgba(234,238,247,1);
+            background: url('jiantu/user.png') 12px 12px no-repeat;
+            padding-left: 40px;
+            background-color: #F8F8F8;
+        }
+        #password{
+            font-size: 20px;
+            width: 350px;
+            height: 60px;
+            border-radius: 4px;
+            border: 1px solid rgba(234,238,247,1);
+            background: url('jiantu/passwd.png') 12px 15px no-repeat;
+            padding-left: 40px;
+            background-color: #F8F8F8;
+        }
+        .remember{
+            font-weight: bold;
+            font-size: 20px;
+            float: left;
+            color: #969696;
+            margin: 10px 0;
+        }
+        .wengti{
+            float: right;
+            margin: 10px 0;
+            font-size: 20px;
+            color: #969696;
+        }
+        .signin{
+            margin-top: 20px;
+            width: 100%;
+            border-radius: 25px;
+            background: #3194D0;
+            color: white;
+            font-size: 30px;
+            border: none;
+        }
+        .shejiao{
+            margin-top: 50px;
+            text-align: center;
+            background-color: #fff;
+        }
+        .sjabc{
+            height: 2px;
+            width: 80%;
+            background: #b5b5b5;
+            position: relative;
+            top: -15px;
+            left: 30px;
+        }
+        .sj123{
+            font-size: 25px;
+            font-weight: 500;
+            color: #b5b5b5;
+            padding: 0 20px;
+            display: inline-block;
+            background: #fff;
+            margin-top: -25px;
+        }
+        .di3fang{
+            height: 50px;
+            border: 1px solid white;
+        }
+        .weibo{
+            width: 10px;
+            float: left;
+            margin-top: 10px;
+        }
+        .weixin{
+            height: 60px;
+            width: 280px;
+            float: none;
+            margin-top: 10px;
+        }
+        .qq{
+            height: 60px;
+            width: 500px;
+            float: none;
+            margin-top: -60px;
+        }
+        .qita{
+            height: 160px;
+            width: 700px;
+            float: none;
+            margin-top: -50px;
+        }
+    </style>
+</head>
+<body class="zhuye">
+    <div class="logo">
+        <a href="/"><img src="jiantu/jianshulogo.png" -height="50" -width="70"></a>
+    </div>
+    <div class="main">
+        <h1 class="title">
+            <b>登录</b>
+            <b>.</b>
+            <b>注册</b>
+        </h1>
+        <form action="fangzhan.py" method="get" enctype="multipart/form-data">
+            <input   name="user" type="text" placeholder="手机号或邮箱" id="user">
+            <input name="user" type="text" placeholder="密码" id="password">
+        </form>
+        <div class="remember">
+            <input type="checkbox" value="abc" checked="checked" name="remember" id="rem">
+                <span>记住我</span>
+            </input>
+        </div>
+        <div class="wengti">
+            <a >登录遇到问题?</a>
+        </div>
+        <button class="signin" type="button">
+            登录
+        </button>
+        <div class="shejiao">
+            <div class="sjabc">
+                <span class="sj123">社交账号登录</span>
+            </div>
+        </div>
+        <div class="di3fang">
+            <div class="weibo">
+                <img src="jiantu/weibologo.png" >
+            </div>
+            <div class="weixin">
+                <img src="jiantu/weixinlogo.png" alt="">
+            </div>
+             <div class="qq">
+               <img src="jiantu/qqlogo.png" >
+            </div>
+             <div class="qita">
+                <img src="jiantu/qitalogo.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
